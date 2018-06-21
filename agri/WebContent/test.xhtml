@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:t="http://myfaces.apache.org/tomahawk">
+	
+	
+<h:head>
+			<style type="text/css">
+            div.css-section {border: 5px solid green;font-family: georgia,garamond,serif;
+            text-indent: 100px;font-size: 50px;text-shadow: 4px 2px 8px mediumorchid;}
+            p.css-section {font-size:50px;}
+            a.css-section {border: 2px solid blue;font-size: 30px; background-color: yellow;}
+            h.css-section {font-size:40px;}
+        </style>
+        
+        <h:outputScript  name="js/updateloc.js" target="head"/>
+		<h:outputScript name="jsf.js" Library="javax.faces"/>
+			
+		</h:head>
+		
+<body  bgcolor="powderblue" onload="delayed()">
+		<div class="css-section">MAGACEL Mobile Commerce</div>
+		<p class="css-section">Search/Recherche</p>
+        
+        
+        
+		<h:form id="search" enctype="multipart/form-data">
+		
+	
+
+			<h:panelGrid id="lpg" columns="1" >
+				<h:panelGroup>
+				
+					<h:outputText  value="Select a Category" style="font-size: 50px"/>
+				    	
+				    					    	
+				    	
+				</h:panelGroup>
+			    <h:panelGroup id="smenu1">
+				    	<h:outputText value="Subcategory" style="font-size: 50px"/>
+				    	
+				    </h:panelGroup>
+				 	<h:panelGroup id="pri1">
+				        <h:outputText value="Price $" style="font-size: 50px"/>
+				    	
+				    	
+				       
+				    </h:panelGroup>		
+				   <h:panelGroup id="distance1">
+				        <h:outputText value="Distance Km" style="font-size: 50px"/>
+				        
+				</h:panelGroup>
+							
+			</h:panelGrid>
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		</h:form>
+
+</body>
+</html>
