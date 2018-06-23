@@ -72,7 +72,7 @@ public class bean {
     		st = con.createStatement();
     		java.sql.ResultSet rs = st.executeQuery(query1);
                 rs.next();
-                photo_ministre ="/images/"+ rs.getString(3);
+                photo_ministre ="/../agri_images/images/"+ rs.getString(3);
     		
     		rs.close();
             st.close();

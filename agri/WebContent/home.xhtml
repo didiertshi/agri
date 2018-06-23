@@ -7,18 +7,18 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:t="http://myfaces.apache.org/tomahawk">
 	
-<head>
+<h:head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ministere de l'Agriculture RDC</title>
-<link rel="stylesheet" type="text/css" href="master.css" />
+<h:outputStylesheet name="css/master.css" />
 <h:outputScript name="jsf.js" Library="javax.faces"/>
 <h:outputScript  name="js/updateloc.js" target="head"/>
-</head>
+</h:head>
 
-    <body>
+    <h:body class="body">
          <div class="header">
-              <p class="c1"><img class="image" src="drapeau.jpg" alt="Pineapple" style="width:60px;height:60px;margin-left:30px;"/> MINISTERE DE L'AGRICULTURE PECHE ET ELEVAGE DE LA RDC</p>
+              <p class="c1"><h:graphicImage value="../../agri_images/drapeau.jpg" alt="Pineapple" style="width:60px;height:60px;margin-left:30px;"/> MINISTERE DE L'AGRICULTURE PECHE ET ELEVAGE DE LA RDC</p>
         </div>
         <ul>
            <li>
@@ -91,15 +91,39 @@
             <div class="column side">
            <h2>Exellence Mr Le Ministre</h2>
            <h2>GEORGE KAZADI</h2>          
-           <p><h:graphicImage value ="#{bean.photo_ministre}" alt="Pineapple" style="width:300px;height:300px;margin-left:1px;"/>
+           <p><h:graphicImage value ="#{bean.photo_ministre}" alt="Pineapple" style="width:250px;height:250px;margin-left:1px;"/>
 </p>
           <h:outputText value="#{bean.mot_ministre}" style="color:black ;font-size: 20px;"/>
            </div>
+        
+        <div class="column middle">
+        
+             <div class="gallery">
+                
+                <h:outputLink value="../../agri_images/gallery1_1.jpg">
+                <h:graphicImage value ="../../agri_images/gallery1_1.jpg" alt="event1_1" style="width:200px;height:200px;margin-left:10px;"/>
+                   
+                </h:outputLink>
+                <div class="desc">nouvelles</div>
+            </div>
+            
+            <div  class="gallery">
+              <h:outputLink  value="BMW.jpg" >
+               BMW
+               </h:outputLink>
+            
+          </div>
+          <h:outputLink  value="BMW.jpg" styleClass="gallery;">
+               <h:graphicImage value="BMW.jpg" alt="BMW" style="width:200px;height:200px;margin-left:10px;" />
+               </h:outputLink>
+        
+        </div>
         
         
         </div>
         
         
-    </body>
+        
+    </h:body>
     
 </html>
