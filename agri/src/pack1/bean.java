@@ -35,7 +35,164 @@ public class bean {
 	
 	private String photo_ministre;
 	private String mot_ministre;
+	private String gallery1_1;
+	private String gallery1_2;
+	private String gallery1_3;
+	private String gallery1_4;
+	private String gallery1_5;
+	private String gallery1_6;
 	
+	public String getGallery1_2() {
+String query1 ="select * from vex.agri_gallery_image where image_name = 'gallery1_2'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_2 ="../../agri_images/"+ rs.getString(5);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_2;
+	}
+
+	public void setGallery1_2(String gallery1_2) {
+		this.gallery1_2 = gallery1_2;
+	}
+
+	public String getGallery1_3() {
+String query1 ="select * from vex.agri_gallery_image where image_name = 'gallery1_3'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_3 ="../../agri_images/"+ rs.getString(5);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_3;
+	}
+
+	public void setGallery1_3(String gallery1_3) {
+		this.gallery1_3 = gallery1_3;
+	}
+
+	public String getGallery1_4() {
+String query1 ="select * from vex.agri_gallery_image where image_name = 'gallery1_4'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_4 ="../../agri_images/"+ rs.getString(5);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_4;
+	}
+
+	public void setGallery1_4(String gallery1_4) {
+		this.gallery1_4 = gallery1_4;
+	}
+
+	public String getGallery1_5() {
+String query1 ="select * from vex.agri_gallery_image where image_name = 'gallery1_5'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_5 ="../../agri_images/"+ rs.getString(5);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_5;
+	}
+
+	public void setGallery1_5(String gallery1_5) {
+		this.gallery1_5 = gallery1_5;
+	}
+
+	public String getGallery1_6() {
+		
+String query1 ="select * from vex.agri_gallery_image where image_name = 'gallery1_6'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_6 ="../../agri_images/"+ rs.getString(5);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_6;
+	}
+
+	public void setGallery1_6(String gallery1_6) {
+		this.gallery1_6 = gallery1_6;
+	}
+
+	public String getGallery1_1() {
+String query1 ="select * from vex.agri_gallery_image where image_name = 'gallery1_1'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_1 ="../../agri_images/"+ rs.getString(5);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_1;
+	}
+
+	public void setGallery1_1(String gallery1_1) {
+		this.gallery1_1 = gallery1_1;
+	}
+
 	public String getMot_ministre() {
 		
 		String query1 ="select * from vex.agri_text where text_name = 'mot_ministre'";

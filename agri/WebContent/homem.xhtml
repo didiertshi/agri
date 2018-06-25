@@ -11,14 +11,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ministere de l'Agriculture RDC</title>
-<link rel="stylesheet" type="text/css" href="masterm.css" />
+<h:outputStylesheet name="css/masterm.css" />
 <h:outputScript name="jsf.js" Library="javax.faces"/>
 <h:outputScript  name="js/updateloc.js" target="head"/>
 </h:head>
 
-    <body>
+    <h:body class="body">
         <div class="header">
-              <p class="c1"><img class="image" src="../../agri_images/drapeau.jpg" alt="Pineapple" style="width:60px;height:60px;margin-left:20px;"/> MINISTERE DE L'AGRICULTURE PECHE ET ELEVAGE DE LA RDC</p>
+              <p class="c1"><h:graphicImage value="../../agri_images/drapeau.jpg" alt="Pineapple" style="width:60px;height:60px;margin-left:30px;"/> MINISTERE DE L'AGRICULTURE PECHE ET ELEVAGE DE LA RDC</p>
         </div>
         
         <ul>
@@ -94,8 +94,64 @@
            <h2>GEORGE KAZADI</h2>          
            <p><h:graphicImage value ="#{bean.photo_ministre}" alt="Pineapple" style="width:150px;height:150px;margin-left:1px;"/>
 
-</p>
+           </p>
          <h:outputText value="#{bean.mot_ministre}" style="color:black ;font-size: 20px;"/>
+           </div>
+           
+           <div class="column middle">
+                  <div class="gallery">
+                
+                <h:outputLink value="#{bean.gallery1_1}">
+                <h:graphicImage value ="#{bean.gallery1_1}" alt="event1_1" style="width:200px;height:200px;margin-left:10px;"/>
+                   
+                </h:outputLink>
+                <div class="desc">nouvelles 2017</div>
+            </div>
+          
+           <div  class="gallery">
+              <h:outputLink value="#{bean.gallery1_2}">
+               <h:graphicImage value ="#{bean.gallery1_2}" alt="event1_1" style="width:200px;height:200px;margin-left:10px;"/>
+               </h:outputLink>
+               <div class="desc">nouvelles 2017</div>
+            </div>
+            
+            <div  class="gallery">
+              <h:outputLink value="#{bean.gallery1_3}">
+               <h:graphicImage value ="#{bean.gallery1_3}" alt="event1_1" style="width:200px;height:200px;margin-left:10px;"/>
+               </h:outputLink>
+               <div class="desc">nouvelles 2017</div>
+            </div>
+            
+            <div  class="gallery">
+              <h:outputLink value="#{bean.gallery1_4}">
+               <h:graphicImage value ="#{bean.gallery1_4}" alt="event1_1" style="width:200px;height:200px;margin-left:10px;"/>
+               </h:outputLink>
+               <div class="desc">nouvelles 2017</div>
+            </div>
+            
+            <div  class="gallery">
+              <h:outputLink value="#{bean.gallery1_5}">
+               <h:graphicImage value ="#{bean.gallery1_5}" alt="event1_1" style="width:200px;height:200px;margin-left:10px;"/>
+               </h:outputLink>
+               <div class="desc">nouvelles 2017</div>
+            </div>
+            
+            <div  class="gallery">
+              <h:outputLink value="#{bean.gallery1_6}">
+               <h:graphicImage value ="#{bean.gallery1_6}" alt="event1_1" style="width:200px;height:200px;margin-left:10px;"/>
+               </h:outputLink>
+               <div class="desc">nouvelles 2017</div>
+            </div>
+            
+            <div  class="gallery">
+              <h:outputLink value="../../agri_videos/video3.mp4">
+                <video width="300" src="../../agri_videos/video3.mp4" type="video/mp4" controls="control" >
+               </video>
+               </h:outputLink>
+               <div class="desc">Déclaration du Ministre de l agriculture</div>
+            </div>
+          
+           
            </div>
         
         
@@ -103,6 +159,6 @@
         
          
         
-    </body>
+    </h:body>
    
 </html>
