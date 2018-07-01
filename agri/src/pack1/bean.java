@@ -43,7 +43,7 @@ public class bean {
 	private String gallery1_6;
 	
 	public String getGallery1_2() {
-String query1 ="select * from vex.agri_gallery_image where image_name = 'gallery1_2'";
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_2'";
 		
 		try {
     		Class.forName(driver).newInstance();
@@ -68,7 +68,7 @@ String query1 ="select * from vex.agri_gallery_image where image_name = 'gallery
 	}
 
 	public String getGallery1_3() {
-String query1 ="select * from vex.agri_gallery_image where image_name = 'gallery1_3'";
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_3'";
 		
 		try {
     		Class.forName(driver).newInstance();
@@ -93,7 +93,7 @@ String query1 ="select * from vex.agri_gallery_image where image_name = 'gallery
 	}
 
 	public String getGallery1_4() {
-String query1 ="select * from vex.agri_gallery_image where image_name = 'gallery1_4'";
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_4'";
 		
 		try {
     		Class.forName(driver).newInstance();
@@ -118,7 +118,7 @@ String query1 ="select * from vex.agri_gallery_image where image_name = 'gallery
 	}
 
 	public String getGallery1_5() {
-String query1 ="select * from vex.agri_gallery_image where image_name = 'gallery1_5'";
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_5'";
 		
 		try {
     		Class.forName(driver).newInstance();
@@ -144,7 +144,7 @@ String query1 ="select * from vex.agri_gallery_image where image_name = 'gallery
 
 	public String getGallery1_6() {
 		
-String query1 ="select * from vex.agri_gallery_image where image_name = 'gallery1_6'";
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_6'";
 		
 		try {
     		Class.forName(driver).newInstance();
@@ -169,7 +169,7 @@ String query1 ="select * from vex.agri_gallery_image where image_name = 'gallery
 	}
 
 	public String getGallery1_1() {
-String query1 ="select * from vex.agri_gallery_image where image_name = 'gallery1_1'";
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_1'";
 		
 		try {
     		Class.forName(driver).newInstance();
@@ -195,7 +195,7 @@ String query1 ="select * from vex.agri_gallery_image where image_name = 'gallery
 
 	public String getMot_ministre() {
 		
-		String query1 ="select * from vex.agri_text where text_name = 'mot_ministre'";
+		String query1 ="select * from agri.agri_text where text_name = 'mot_ministre'";
 		
 		try {
     		Class.forName(driver).newInstance();
@@ -222,7 +222,7 @@ String query1 ="select * from vex.agri_gallery_image where image_name = 'gallery
 
 	public String getPhoto_ministre() {
 		
-		String query1 ="select * from vex.agri_pic where picture_name = 'photo_ministre'";
+		String query1 ="select * from agri.agri_pic where picture_name = 'photo_ministre'";
 		try {
     		Class.forName(driver).newInstance();
     		con = DriverManager.getConnection(url,userName,password);
@@ -247,7 +247,7 @@ String query1 ="select * from vex.agri_gallery_image where image_name = 'gallery
 	}
 
 	java.sql.Connection con = null;
-	String url = "jdbc:mysql://localhost:3306/vex";
+	String url = "jdbc:mysql://localhost:3306/agri";
 	String driver ="com.mysql.jdbc.Driver";
 	String userName ="enfant1";
 	String password="!Muepu$2016!";
