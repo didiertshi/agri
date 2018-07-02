@@ -11,7 +11,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ministere de l'Agriculture RDC</title>
-<h:outputStylesheet name="css/original.css" />
+<h:outputStylesheet name="css/original4.css" />
 <h:outputScript name="jsf.js" Library="javax.faces"/>
 <h:outputScript  name="js/updateloc.js" target="head"/>
 </h:head>
@@ -93,7 +93,7 @@
            <h2>Exellence Mr Le Ministre</h2>
            <h2>GEORGE KAZADI</h2>          
            <p><h:graphicImage value ="#{bean.photo_ministre}" alt="Pineapple" style="width:250px;height:250px;margin-left:1px;"/>
-</p>
+           </p>
           <h:outputText value="#{bean.mot_ministre}" style="color:black ;font-size: 20px;"/>
             </div>
            
@@ -104,42 +104,42 @@
                 <h:graphicImage value ="#{bean.gallery1_1}" alt="event1_1" style="width:200px;height:200px;margin-left:10px;"/>
                    
                 </h:outputLink>
-                <div class="desc"><h:outputText value="#{bean.gallery1_1_desc}" style="color:red"/></div>
+                <div class="desc"><h:outputText value="#{bean.gallery1_1_desc}" style="color:purple"/></div>
             </div>
           
            <div  class="gallery">
               <h:outputLink value="#{bean.gallery1_2}">
                <h:graphicImage value ="#{bean.gallery1_2}" alt="event1_1" style="width:200px;height:200px;margin-left:10px;"/>
                </h:outputLink>
-               <div class="desc"> <h:outputText value="#{bean.gallery1_2_desc}" style="color:red"/></div>
+               <div class="desc"> <h:outputText value="#{bean.gallery1_2_desc}" style="color:purple"/></div>
             </div>
             
             <div  class="gallery">
               <h:outputLink value="#{bean.gallery1_3}">
                <h:graphicImage value ="#{bean.gallery1_3}" alt="event1_1" style="width:200px;height:200px;margin-left:10px;"/>
                </h:outputLink>
-               <div class="desc"><h:outputText value="#{bean.gallery1_3_desc}" style="color:red"/></div>
+               <div class="desc"><h:outputText value="#{bean.gallery1_3_desc}" style="color:purple"/></div>
             </div>
             
             <div  class="gallery">
               <h:outputLink value="#{bean.gallery1_4}">
                <h:graphicImage value ="#{bean.gallery1_4}" alt="event1_1" style="width:200px;height:200px;margin-left:10px;"/>
                </h:outputLink>
-               <div class="desc"><h:outputText value="#{bean.gallery1_4_desc}" style="color:red"/></div>
+               <div class="desc"><h:outputText value="#{bean.gallery1_4_desc}" style="color:purple"/></div>
             </div>
             
             <div  class="gallery">
               <h:outputLink value="#{bean.gallery1_5}">
                <h:graphicImage value ="#{bean.gallery1_5}" alt="event1_1" style="width:200px;height:200px;margin-left:10px;"/>
                </h:outputLink>
-               <div class="desc"><h:outputText value="#{bean.gallery1_5_desc}" style="color:red"/></div>
+               <div class="desc"><h:outputText value="#{bean.gallery1_5_desc}" style="color:purple"/></div>
             </div>
             
             <div  class="gallery">
               <h:outputLink value="#{bean.gallery1_6}">
                <h:graphicImage value ="#{bean.gallery1_6}" alt="event1_1" style="width:200px;height:200px;margin-left:10px;"/>
                </h:outputLink>
-               <div class="desc"><h:outputText value="#{bean.gallery1_6_desc}" style="color:red"/></div>
+               <div class="desc"><h:outputText value="#{bean.gallery1_6_desc}" style="color:purple"/></div>
             </div>
             
             
@@ -147,40 +147,30 @@
             <div  class="gallery">
               
                 <iframe width="300" height="170" src="#{bean.youtube_video1}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="true"></iframe>
-               <div class="desc"><h:outputText value="#{bean.youtube_video1_desc}" style="color:red"/></div>
+               <div class="desc"><h:outputText value="#{bean.youtube_video1_desc}" style="color:purple"/></div>
             </div>
             
             <div  class="gallery">
               
                 <iframe width="300" height="170" src="#{bean.youtube_video2}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="true"></iframe>
-               <div class="desc"><h:outputText value="#{bean.youtube_video2_desc}" style="color:red"/></div>
+               <div class="desc"><h:outputText value="#{bean.youtube_video2_desc}" style="color:purple"/></div>
             </div>
           
            
            </div>
-           
-           
-           
-           <div class="column right">
-           
-               <div class="c2">
-                                
-                 <form action="../../faces/sale/paiement.xhtml"> <input type="submit" value="Connection Operateur"></input></form>
-                       
-               </div>
-           
-           
-           </div>
-           
-           
         
+        
+           <div class="column r">
+                     <form action="../../faces/sale/paiement.xhtml"> <input type="submit" value="Connection Operateur"></input></form>
+           
+           </div>   
         
         </div>
         
         <div class="footer">
-               <p><h:outputText value="Addresse : Croisement Boulevar du 30 Juin et avenue Batetela , Comune de la Gombe" style="color:red"/></p>
-               <p><h:outputText value="Telephone :  +243815026718" style="color:red"/></p>
-               <p><h:outputText value="Courielle :  minagri2017@gmail.com" style="color:red"/></p>
+               <p class="c3"><h:outputText value="Addresse : Croisement Boulevar du 30 Juin et avenue Batetela , Comune de la Gombe" /></p>
+               <p class="c3"><h:outputText value="Telephone :  +243815026718" /></p>
+               <p class="c3"><h:outputText value="Courielle :  minagri2017@gmail.com" /></p>
            </div>
          
         

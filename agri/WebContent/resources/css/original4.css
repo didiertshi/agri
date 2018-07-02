@@ -15,10 +15,10 @@ body {
 }
 
 .footer {
-    padding: 20px;
+    padding: 5px;
     text-align: center;
     background-color: #80ff80;
-    margin-top: 20px;
+    margin-top: 1px;
     opacity: 0.7;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .c3{
-	font-size: 25px;
+	font-size: 15px;
 	color: #8000ff;
 }
 
@@ -91,7 +91,7 @@ p a:hover {
 
 .column {
     float: left;
-    padding: 10px;
+    padding: 5px;
     text-align: left;
 }
 
@@ -103,7 +103,7 @@ p a:hover {
     width: 50%;
 }
 
-.column.right{
+.column.ri {
 	width: 25%;
 }
 
