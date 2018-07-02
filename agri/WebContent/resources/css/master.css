@@ -22,6 +22,14 @@ body {
 	
 }
 
+.c2 {
+	display: inline-block;
+	font-size: 20px;
+	
+	
+}
+
+
 ul {
     list-style-type: none;
     margin: 10px;
@@ -92,11 +100,16 @@ p a:hover {
     width: 50%;
 }
 
+.column.right{
+	width: 25%;
+}
+
 .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background: #80ff80;
     margin-top: 20px;
+    opacity: 0.7;
 }
 
 .gallery {

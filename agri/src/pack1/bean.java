@@ -42,6 +42,291 @@ public class bean {
 	private String gallery1_5;
 	private String gallery1_6;
 	
+	private String gallery1_1_desc;
+	private String gallery1_2_desc;
+	private String gallery1_3_desc;
+	private String gallery1_4_desc;
+	private String gallery1_5_desc;
+	private String gallery1_6_desc;
+	
+	private String youtube_video1;
+	private String youtube_video2;
+	
+	private String youtube_video1_desc;
+	private String youtube_video2_desc;
+	
+	private String user_name;
+	
+	
+	
+	public String getUser_name() {
+		return user_name;
+	}
+
+	public void setUser_name(String user_name) {
+		this.user_name = user_name;
+	}
+
+	public String getYoutube_video2() {
+		
+String query1 ="select * from agri.agri_youtube where agri_youtube_name = 'video_1_2'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                youtube_video2 ="https://www.youtube.com/embed/"+ rs.getString(3);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return youtube_video2;
+	}
+
+	public void setYoutube_video2(String youtube_video2) {
+		this.youtube_video2 = youtube_video2;
+	}
+
+	public String getYoutube_video1_desc() {
+String query1 ="select * from agri.agri_youtube where agri_youtube_name = 'video_1_1'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                youtube_video1_desc = rs.getString(5);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return youtube_video1_desc;
+	}
+
+	public void setYoutube_video1_desc(String youtube_video1_desc) {
+		this.youtube_video1_desc = youtube_video1_desc;
+	}
+
+	public String getYoutube_video2_desc() {
+String query1 ="select * from agri.agri_youtube where agri_youtube_name = 'video_1_2'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                youtube_video2_desc = rs.getString(5);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return youtube_video2_desc;
+	}
+
+	public void setYoutube_video2_desc(String youtube_video2_desc) {
+		this.youtube_video2_desc = youtube_video2_desc;
+	}
+
+	
+	
+	
+	
+	
+	
+	public String getGallery1_1_desc() {
+		
+       String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_1'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_1_desc = rs.getString(6);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_1_desc;
+	}
+
+	public void setGallery1_1_desc(String gallery1_1_desc) {
+		this.gallery1_1_desc = gallery1_1_desc;
+	}
+
+	public String getGallery1_2_desc() {
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_2'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_2_desc = rs.getString(6);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_2_desc;
+	}
+
+	public void setGallery1_2_desc(String gallery1_2_desc) {
+		this.gallery1_2_desc = gallery1_2_desc;
+	}
+
+	public String getGallery1_3_desc() {
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_3'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_3_desc = rs.getString(6);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_3_desc;
+	}
+
+	public void setGallery1_3_desc(String gallery1_3_desc) {
+		this.gallery1_3_desc = gallery1_3_desc;
+	}
+
+	public String getGallery1_4_desc() {
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_4'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_4_desc = rs.getString(6);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_4_desc;
+	}
+
+	public void setGallery1_4_desc(String gallery1_4_desc) {
+		this.gallery1_4_desc = gallery1_4_desc;
+	}
+
+	public String getGallery1_5_desc() {
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_5'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_5_desc = rs.getString(6);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_5_desc;
+	}
+
+	public void setGallery1_5_desc(String gallery1_5_desc) {
+		this.gallery1_5_desc = gallery1_5_desc;
+	}
+
+	public String getGallery1_6_desc() {
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_6'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_6_desc = rs.getString(6);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_6_desc;
+	}
+
+	public void setGallery1_6_desc(String gallery1_6_desc) {
+		this.gallery1_6_desc = gallery1_6_desc;
+	}
+
+	
+	public String getYoutube_video1() {
+		
+String query1 ="select * from agri.agri_youtube where agri_youtube_name = 'video_1_1'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                youtube_video1 ="https://www.youtube.com/embed/"+ rs.getString(3);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return youtube_video1;
+	}
+
+	public void setYoutube_video1(String youtube_video) {
+		this.youtube_video1 = youtube_video;
+	}
+
 	public String getGallery1_2() {
 String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_2'";
 		
