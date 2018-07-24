@@ -1,0 +1,10 @@
+@CHARSET "ISO-8859-1";
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: lightblue;
+    background-image: url("leaf.jpg");
+    background-position: right top;
+    margin: 1px;
+}

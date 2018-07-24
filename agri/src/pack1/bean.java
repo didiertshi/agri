@@ -1,7 +1,10 @@
 package pack1;
 
+
+
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.sql.CallableStatement;
@@ -9,9 +12,9 @@ import java.sql.DriverManager;
 import java.util.ArrayList;
 import java.util.List;
 
-
-
-
+import javax.activation.DataHandler;
+import javax.activation.DataSource;
+import javax.activation.FileDataSource;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
@@ -27,6 +30,15 @@ import org.apache.myfaces.custom.fileupload.UploadedFile;
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.ResultSet;
 import com.mysql.jdbc.Statement;
+
+import java.util.*;
+
+import javax.mail.*;
+import javax.mail.internet.AddressException;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
+import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
 
 @ManagedBean
 @ViewScoped
@@ -56,6 +68,12 @@ public class bean {
 	private String youtube_video2_desc;
 	
 	private String user_name;
+	private UploadedFile uploadeFile;
+	
+	private String thefile;
+	
+	
+	
 	
 	
 	
@@ -540,5 +558,129 @@ String query1 ="select * from agri.agri_gallery_image where image_name = 'galler
 	
 	java.sql.Statement st;
 	
+	public void submit() throws Exception{
+		
+		 List<String> resultSetArray=new ArrayList<>();
+		
+		Properties props = System.getProperties();
+		// Assuming you are sending email from localhost
+		// Recipient's email ID needs to be mentioned.
+	      String to = "didiertshi@gmail.com";
+	      String host = "smtpout.secureserver.net";
+	      String from = "info@ditelnetwork.com";
+	      String pass ="admin";
+	     
+	     // props.put("mail.smtp.starttls.enable", "true");
+	     // props.put("mail.smtp.host", host);
+	    //  props.put("mail.smtp.user", from);
+	    //  props.put("mail.smtp.password", pass);
+	    //  props.put("mail.smtp.port", "587");
+	    //  props.put("mail.smtp.auth", "true");
+	      
+	      props.setProperty("mail.smtp.host", host);
+	      props.setProperty("mail.smtp.user", from);
+	      props.setProperty("mail.smtp.password", "admin");
+	      props.setProperty("mail.smtp.port", "80");
+	      props.setProperty("mail.smtp.auth", "true");
+	      //Session session = Session.getDefaultInstance(props);
+	      Session session = Session.getDefaultInstance(props,new Authenticator() {
+	    	  protected PasswordAuthentication getPasswordAuthentication() {
+                  return new PasswordAuthentication(
+                          "info@ditelnetwork.com", "admin");// Specify the Username and the PassWord
+              }
+
+          
+	      });
+	      
+		String query1 ="select * from agri.agri_youtube";
+		File file = null;
+		String fileName =null;
+		 
+		
+		String prefix ="report";
+		String suffix ="csv";
+		try{
+			Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+    		int numCols = rs.getMetaData().getColumnCount();
+    		while (rs.next()) {
+    			StringBuilder sb = new StringBuilder();
+    			for (int i = 1; i <= numCols; i++) {
+                    sb.append(String.format(String.valueOf(rs.getString(i))) + ", ");
+
+                }
+    			resultSetArray.add(sb.toString());
+    			
+    		}
+    		rs.close();
+            st.close();
+            con.close();
+			
+		}catch(Exception ex){
+			System.out.println(ex.getMessage());
+		}
+		try{
+			
+			file = File.createTempFile(prefix + "_", "." + suffix, new File("C:/Program Files/Apache Software Foundation/Tomcat 7.0/webapps/agri_temp"));
+			FileWriter fileWriter = new FileWriter(file, false);
+			for(String mapping : resultSetArray) {
+	            fileWriter.write(mapping + "\n");
+	         }
+			fileWriter.close();
+			thefile = file.getName();
+			
+		}catch(Exception ex){
+			System.out.println(ex.getMessage());
+		}
+		
+		try{
+			// email part
+	    	// Create a default MimeMessage object.
+	          MimeMessage message = new MimeMessage(session);
+	       // Set From: header field of the header.
+	          message.setFrom(new InternetAddress(from)); 
+	       // Set To: header field of the header.
+	          message.addRecipient(Message.RecipientType.TO,
+	                                   new InternetAddress(to));
+	       // Set Subject: header field
+	          message.setSubject("attachement");
+	       // Create the message part
+	          BodyPart messageBodyPart = new MimeBodyPart(); 
+	       // Now set the actual message
+	          messageBodyPart.setText("This is message body");
+	       // Create a multipar message
+	          Multipart multipart = new MimeMultipart();
+	       // Set text message part
+	          multipart.addBodyPart(messageBodyPart);
+	       // Part two is attachment
+	          messageBodyPart = new MimeBodyPart();
+	          String filename = "C:/Program Files/Apache Software Foundation/Tomcat 7.0/webapps/agri_temp/"+thefile;
+	          DataSource source = new FileDataSource(filename);
+	          messageBodyPart.setDataHandler(new DataHandler(source));
+	          messageBodyPart.setFileName(thefile);
+	          multipart.addBodyPart(messageBodyPart);
+	       // Send the complete message parts
+	          message.setContent(multipart);
+	       // Send message
+	         // Transport transport = session.getTransport("smtp");
+	         // transport.connect(host, from, pass);
+	          Transport.send(message);
+	          System.out.println("Sent message successfully....");
+	          
+	          
+		}catch (AddressException ae) {
+            ae.printStackTrace();
+        }
+		
+		catch(MessagingException mex){
+			mex.printStackTrace();
+		}
+		
+		
+		
+	}
+
 
 }
