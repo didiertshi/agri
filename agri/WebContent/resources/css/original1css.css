@@ -63,23 +63,6 @@ body {
 	color: #0000ff;
 }
 
-.c5{
-	position: relative;
-	display: inline-block;
-	padding: 5px 5px;
-	text-align: center;
-	font-size: 25px;
-	color: #8000ff;
-	background-color: #ffff80
-	
-	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-
 ul {
     list-style-type: none;
     margin: 10px;
@@ -316,7 +299,7 @@ li div {
 	color: #0000ff;
 }
 li div {
-    display: block;
+    display: inline-block;
     padding: 10px 10px;
     color: #8000ff;
     text-align: center;
@@ -325,11 +308,7 @@ li div {
     background-color: #ffffff
 }
 
-.dropdown{
-	
-    display: block;
-	
-}
+
 
     .c11{
 	width:25px;
@@ -345,24 +324,12 @@ li div {
 	margin-right:10px;
 	border-radius: 30%;
 }
-
-
+.dropdown{
+	position: relative;
+    display: block;
+	background-color: #ffffff
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:50px; top:0px;}
-    50%  {background-color:blue; left:50px; top:0px;}
-    75%  {background-color:green; left:0px; top:0px;}
-    100% {background-color:red; left:0px; top:0px;}
-}
 
-@keyframes example {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:50px; top:0px;}
-    50%  {background-color:blue; left:50px; top:0px;}
-    75%  {background-color:green; left:0px; top:0px;}
-    100% {background-color:red; left:0px; top:0px;}
 }
 
