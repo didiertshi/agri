@@ -51,7 +51,7 @@ body {
 }
 
 .c4{
-	font-size: 35px;
+	font-size: 30px;
 	color: #0000ff;
 }
 
@@ -63,15 +63,16 @@ ul {
 }
 
 li {
-    float:left;
+    display: inline;
 }
 
 li div {
     display: inline-block;
-    padding: 14px 56px;
+    padding: 14px 40px;
     color: #8000ff;
     text-align: center;
     text-decoration: none;
+    font-size: 15px;
     background-color: #804040
 }
 
@@ -147,34 +148,6 @@ p a:hover {
 }
 
 
-@media screen and (max-width:600px) {
-    .column {
-        width: 100%;
-    }
-    
-    .c1 {
-	display: inline-block;
-	font-size: 15px;
-	color: #0000ff;
-	line-height: 15px;
-}  
- .c2 {
-	display: inline-block;
-	font-size: 15px;
-	color: #0000ff;
-	line-height: 15px;
-}
-    
-    .c11{
-	width:30px;
-	height:30px;
-	margin-left:5px;
-	margin-right:5px;
-	border-radius: 30%;
-}
-
-
-}
 
 
 @media screen and (max-width:1200px) {
@@ -197,6 +170,110 @@ p a:hover {
 	margin-right:5px;
 	border-radius: 30%;
 }
+.c4{
+	font-size: 20px;
+	color: #0000ff;
+}
+
+li div {
+    display: inline-block;
+    padding: 14px 30px;
+    color: #8000ff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 11px;
+    background-color: #804040
+}
+
+}
+
+@media screen and (max-width:900px) {
+    .column {
+        width: 100%;
+    }
+    
+    .c1 {
+	display: inline-block;
+	font-size: 15px;
+	color: #0000ff;
+	line-height: 15px;
+}  
+ .c2 {
+	display: inline-block;
+	font-size: 15px;
+	color: #0000ff;
+	line-height: 15px;
+}
+.c4{
+	font-size: 15px;
+	color: #0000ff;
+}
+
+li div {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #8000ff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 9px;
+    background-color: #804040
+}
+    
+    .c11{
+	width:25px;
+	height:25px;
+	margin-left:5px;
+	margin-right:5px;
+	border-radius: 30%;
+}
 
 
 }
+
+@media screen and (max-width:500px) {
+    .column {
+        width: 100%;
+    }
+    
+    .c1 {
+	display: inline-block;
+	font-size: 10px;
+	color: #0000ff;
+	line-height: 15px;
+}  
+ .c2 {
+	display: inline-block;
+	font-size: 10px;
+	color: #0000ff;
+	line-height: 15px;
+}
+    .c4{
+	font-size: 10px;
+	color: #0000ff;
+}
+
+ul{
+	list-style-type: none;
+	
+}
+
+li div {
+    display: none;
+    padding: 10px 20px;
+    color: #8000ff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 9px;
+    background-color: #804040
+}
+    .c11{
+	width:25px;
+	height:25px;
+	margin-left:5px;
+	margin-right:5px;
+	border-radius: 30%;
+}
+
+
+}
+
