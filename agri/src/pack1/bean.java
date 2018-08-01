@@ -227,6 +227,24 @@ String query1 ="select * from agri.agri_text where text_name = 'flash_info_1'";
 	}
 
 	public String getFlash_info_2() {
+		
+String query1 ="select * from agri.agri_text where text_name = 'flash_info_2'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                flash_info_2 = rs.getString(3);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
 		return flash_info_2;
 	}
 
@@ -235,6 +253,23 @@ String query1 ="select * from agri.agri_text where text_name = 'flash_info_1'";
 	}
 
 	public String getFlash_info_3() {
+String query1 ="select * from agri.agri_text where text_name = 'flash_info_3'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                flash_info_3 = rs.getString(3);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
 		return flash_info_3;
 	}
 
@@ -243,6 +278,23 @@ String query1 ="select * from agri.agri_text where text_name = 'flash_info_1'";
 	}
 
 	public String getFlash_info_4() {
+String query1 ="select * from agri.agri_text where text_name = 'flash_info_4'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                flash_info_4 = rs.getString(3);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
 		return flash_info_4;
 	}
 
@@ -251,6 +303,23 @@ String query1 ="select * from agri.agri_text where text_name = 'flash_info_1'";
 	}
 
 	public String getFlash_info_5() {
+String query1 ="select * from agri.agri_text where text_name = 'flash_info_5'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                flash_info_5 = rs.getString(3);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
 		return flash_info_5;
 	}
 
@@ -259,6 +328,24 @@ String query1 ="select * from agri.agri_text where text_name = 'flash_info_1'";
 	}
 
 	public String getFlash_info_6() {
+		
+String query1 ="select * from agri.agri_text where text_name = 'flash_info_6'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                flash_info_6 = rs.getString(3);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
 		return flash_info_6;
 	}
 
@@ -267,6 +354,24 @@ String query1 ="select * from agri.agri_text where text_name = 'flash_info_1'";
 	}
 
 	public String getFlash_info_7() {
+		
+String query1 ="select * from agri.agri_text where text_name = 'flash_info_7'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                flash_info_7 = rs.getString(3);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
 		return flash_info_7;
 	}
 
@@ -275,6 +380,24 @@ String query1 ="select * from agri.agri_text where text_name = 'flash_info_1'";
 	}
 
 	public String getFlash_info_8() {
+		
+String query1 ="select * from agri.agri_text where text_name = 'flash_info_8'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                flash_info_8 = rs.getString(3);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
 		return flash_info_8;
 	}
 
@@ -283,6 +406,23 @@ String query1 ="select * from agri.agri_text where text_name = 'flash_info_1'";
 	}
 
 	public String getFlash_info_9() {
+String query1 ="select * from agri.agri_text where text_name = 'flash_info_9'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                flash_info_9 = rs.getString(3);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
 		return flash_info_9;
 	}
 
@@ -291,6 +431,24 @@ String query1 ="select * from agri.agri_text where text_name = 'flash_info_1'";
 	}
 
 	public String getFlash_info_10() {
+		
+String query1 ="select * from agri.agri_text where text_name = 'flash_info_10'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                flash_info_10 = rs.getString(3);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
 		return flash_info_10;
 	}
 
@@ -299,6 +457,24 @@ String query1 ="select * from agri.agri_text where text_name = 'flash_info_1'";
 	}
 
 	public String getFlash_info_11() {
+		
+String query1 ="select * from agri.agri_text where text_name = 'flash_info_11'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                flash_info_11 = rs.getString(3);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
 		return flash_info_11;
 	}
 
