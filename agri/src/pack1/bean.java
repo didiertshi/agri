@@ -186,8 +186,126 @@ String query1 ="select * from agri.agri_text where text_name = 'mot_ministre_4'"
 	private String gallery1_19_desc;
 	private String gallery1_20_desc;
 	
+	private String flash_info_1;
+	private String flash_info_2;
+	private String flash_info_3;
+	private String flash_info_4;
+	private String flash_info_5;
+	private String flash_info_6;
+	private String flash_info_7;
+	private String flash_info_8;
+	private String flash_info_9;
+	private String flash_info_10;
+	private String flash_info_11;
 	
 	
+	
+	public String getFlash_info_1() {
+		
+String query1 ="select * from agri.agri_text where text_name = 'flash_info_1'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                flash_info_1 = rs.getString(3);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return flash_info_1;
+	}
+
+	public void setFlash_info_1(String flash_info_1) {
+		this.flash_info_1 = flash_info_1;
+	}
+
+	public String getFlash_info_2() {
+		return flash_info_2;
+	}
+
+	public void setFlash_info_2(String flash_info_2) {
+		this.flash_info_2 = flash_info_2;
+	}
+
+	public String getFlash_info_3() {
+		return flash_info_3;
+	}
+
+	public void setFlash_info_3(String flash_info_3) {
+		this.flash_info_3 = flash_info_3;
+	}
+
+	public String getFlash_info_4() {
+		return flash_info_4;
+	}
+
+	public void setFlash_info_4(String flash_info_4) {
+		this.flash_info_4 = flash_info_4;
+	}
+
+	public String getFlash_info_5() {
+		return flash_info_5;
+	}
+
+	public void setFlash_info_5(String flash_info_5) {
+		this.flash_info_5 = flash_info_5;
+	}
+
+	public String getFlash_info_6() {
+		return flash_info_6;
+	}
+
+	public void setFlash_info_6(String flash_info_6) {
+		this.flash_info_6 = flash_info_6;
+	}
+
+	public String getFlash_info_7() {
+		return flash_info_7;
+	}
+
+	public void setFlash_info_7(String flash_info_7) {
+		this.flash_info_7 = flash_info_7;
+	}
+
+	public String getFlash_info_8() {
+		return flash_info_8;
+	}
+
+	public void setFlash_info_8(String flash_info_8) {
+		this.flash_info_8 = flash_info_8;
+	}
+
+	public String getFlash_info_9() {
+		return flash_info_9;
+	}
+
+	public void setFlash_info_9(String flash_info_9) {
+		this.flash_info_9 = flash_info_9;
+	}
+
+	public String getFlash_info_10() {
+		return flash_info_10;
+	}
+
+	public void setFlash_info_10(String flash_info_10) {
+		this.flash_info_10 = flash_info_10;
+	}
+
+	public String getFlash_info_11() {
+		return flash_info_11;
+	}
+
+	public void setFlash_info_11(String flash_info_11) {
+		this.flash_info_11 = flash_info_11;
+	}
+
 	public String getGallery1_7() {
 		
 String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_7'";
