@@ -46,7 +46,90 @@ import javax.mail.internet.MimeMultipart;
 public class bean {
 	
 	private String photo_ministre;
-	private String mot_ministre;
+	private String mot_ministre_1;
+	private String mot_ministre_2;
+	private String mot_ministre_3;
+	private String mot_ministre_4;
+	
+	public String getMot_ministre_2() {
+String query1 ="select * from agri.agri_text where text_name = 'mot_ministre_2'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                mot_ministre_2 = rs.getString(3);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		
+		return mot_ministre_2;
+	}
+
+	public void setMot_ministre_2(String mot_ministre_2) {
+		this.mot_ministre_2 = mot_ministre_2;
+	}
+
+	public String getMot_ministre_3() {
+		
+String query1 ="select * from agri.agri_text where text_name = 'mot_ministre_3'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                mot_ministre_3 = rs.getString(3);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		
+		return mot_ministre_3;
+	}
+
+	public void setMot_ministre_3(String mot_ministre_3) {
+		this.mot_ministre_3 = mot_ministre_3;
+	}
+
+	public String getMot_ministre_4() {
+String query1 ="select * from agri.agri_text where text_name = 'mot_ministre_4'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                mot_ministre_4 = rs.getString(3);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		
+		return mot_ministre_4;
+	}
+
+	public void setMot_ministre_4(String mot_ministre_4) {
+		this.mot_ministre_4 = mot_ministre_4;
+	}
+
 	private String gallery1_1;
 	private String gallery1_2;
 	private String gallery1_3;
@@ -73,10 +156,772 @@ public class bean {
 	private String thefile;
 	
 	
+	private String gallery1_7;
+	private String gallery1_8;
+	private String gallery1_9;
+	private String gallery1_10;
+	private String gallery1_11;
+	private String gallery1_12;
+	private String gallery1_13;
+	private String gallery1_14;
+	private String gallery1_15;
+	private String gallery1_16;
+	private String gallery1_17;
+	private String gallery1_18;
+	private String gallery1_19;
+	private String gallery1_20;
+	
+	private String gallery1_7_desc;
+	private String gallery1_8_desc;
+	private String gallery1_9_desc;
+	private String gallery1_10_desc;
+	private String gallery1_11_desc;
+	private String gallery1_12_desc;
+	private String gallery1_13_desc;
+	private String gallery1_14_desc;
+	private String gallery1_15_desc;
+	private String gallery1_16_desc;
+	private String gallery1_17_desc;
+	private String gallery1_18_desc;
+	private String gallery1_19_desc;
+	private String gallery1_20_desc;
 	
 	
 	
-	
+	public String getGallery1_7() {
+		
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_7'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_7 ="../../agri_images/"+ rs.getString(5);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		
+		return gallery1_7;
+	}
+
+	public void setGallery1_7(String gallery1_7) {
+		this.gallery1_7 = gallery1_7;
+	}
+
+	public String getGallery1_8() {
+		
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_8'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_8 ="../../agri_images/"+ rs.getString(5);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		
+		return gallery1_8;
+	}
+
+	public void setGallery1_8(String gallery1_8) {
+		this.gallery1_8 = gallery1_8;
+	}
+
+	public String getGallery1_9() {
+		
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_9'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_9 ="../../agri_images/"+ rs.getString(5);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		
+		
+		return gallery1_9;
+	}
+
+	public void setGallery1_9(String gallery1_9) {
+		this.gallery1_9 = gallery1_9;
+	}
+
+	public String getGallery1_10() {
+		
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_10'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_10 ="../../agri_images/"+ rs.getString(5);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_10;
+	}
+
+	public void setGallery1_10(String gallery1_10) {
+		this.gallery1_10 = gallery1_10;
+	}
+
+	public String getGallery1_11() {
+		
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_11'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_11 ="../../agri_images/"+ rs.getString(5);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		
+		
+		return gallery1_11;
+	}
+
+	public void setGallery1_11(String gallery1_11) {
+		this.gallery1_11 = gallery1_11;
+	}
+
+	public String getGallery1_12() {
+		
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_12'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_12 ="../../agri_images/"+ rs.getString(5);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		
+		
+		return gallery1_12;
+	}
+
+	public void setGallery1_12(String gallery1_12) {
+		this.gallery1_12 = gallery1_12;
+	}
+
+	public String getGallery1_13() {
+		
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_13'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_13 ="../../agri_images/"+ rs.getString(5);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_13;
+	}
+
+	public void setGallery1_13(String gallery1_13) {
+		this.gallery1_13 = gallery1_13;
+	}
+
+	public String getGallery1_14() {
+		
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_14'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_14 ="../../agri_images/"+ rs.getString(5);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		
+		return gallery1_14;
+	}
+
+	public void setGallery1_14(String gallery1_14) {
+		this.gallery1_14 = gallery1_14;
+	}
+
+	public String getGallery1_15() {
+		
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_15'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_15 ="../../agri_images/"+ rs.getString(5);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		
+		return gallery1_15;
+	}
+
+	public void setGallery1_15(String gallery1_15) {
+		this.gallery1_15 = gallery1_15;
+	}
+
+	public String getGallery1_16() {
+		
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_16'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_16 ="../../agri_images/"+ rs.getString(5);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_16;
+	}
+
+	public void setGallery1_16(String gallery1_16) {
+		this.gallery1_16 = gallery1_16;
+	}
+
+	public String getGallery1_17() {
+		
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_17'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_17 ="../../agri_images/"+ rs.getString(5);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_17;
+	}
+
+	public void setGallery1_17(String gallery1_17) {
+		this.gallery1_17 = gallery1_17;
+	}
+
+	public String getGallery1_18() {
+		
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_18'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_18 ="../../agri_images/"+ rs.getString(5);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		
+		return gallery1_18;
+	}
+
+	public void setGallery1_18(String gallery1_18) {
+		this.gallery1_18 = gallery1_18;
+	}
+
+	public String getGallery1_19() {
+		
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_19'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_19 ="../../agri_images/"+ rs.getString(5);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		
+		return gallery1_19;
+	}
+
+	public void setGallery1_19(String gallery1_19) {
+		this.gallery1_19 = gallery1_19;
+	}
+
+	public String getGallery1_20() {
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_20'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_20 ="../../agri_images/"+ rs.getString(5);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		
+		return gallery1_20;
+	}
+
+	public void setGallery1_20(String gallery1_20) {
+		this.gallery1_20 = gallery1_20;
+	}
+
+	public String getGallery1_7_desc() {
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_7'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_7_desc = rs.getString(6);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		
+		return gallery1_7_desc;
+	}
+
+	public void setGallery1_7_desc(String gallery1_7_desc) {
+		this.gallery1_7_desc = gallery1_7_desc;
+	}
+
+	public String getGallery1_8_desc() {
+		
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_8'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_8_desc = rs.getString(6);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_8_desc;
+	}
+
+	public void setGallery1_8_desc(String gallery1_8_desc) {
+		this.gallery1_8_desc = gallery1_8_desc;
+	}
+
+	public String getGallery1_9_desc() {
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_9'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_9_desc = rs.getString(6);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_9_desc;
+	}
+
+	public void setGallery1_9_desc(String gallery1_9_desc) {
+		this.gallery1_9_desc = gallery1_9_desc;
+	}
+
+	public String getGallery1_10_desc() {
+		
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_10'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_10_desc = rs.getString(6);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_10_desc;
+	}
+
+	public void setGallery1_10_desc(String gallery1_10_desc) {
+		this.gallery1_10_desc = gallery1_10_desc;
+	}
+
+	public String getGallery1_11_desc() {
+		
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_11'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_11_desc = rs.getString(6);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_11_desc;
+	}
+
+	public void setGallery1_11_desc(String gallery1_11_desc) {
+		this.gallery1_11_desc = gallery1_11_desc;
+	}
+
+	public String getGallery1_12_desc() {
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_12'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_12_desc = rs.getString(6);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_12_desc;
+	}
+
+	public void setGallery1_12_desc(String gallery1_12_desc) {
+		this.gallery1_12_desc = gallery1_12_desc;
+	}
+
+	public String getGallery1_13_desc() {
+		
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_13'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_13_desc = rs.getString(6);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_13_desc;
+	}
+
+	public void setGallery1_13_desc(String gallery1_13_desc) {
+		this.gallery1_13_desc = gallery1_13_desc;
+	}
+
+	public String getGallery1_14_desc() {
+		
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_14'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_14_desc = rs.getString(6);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_14_desc;
+	}
+
+	public void setGallery1_14_desc(String gallery1_14_desc) {
+		this.gallery1_14_desc = gallery1_14_desc;
+	}
+
+	public String getGallery1_15_desc() {
+		
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_15'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_15_desc = rs.getString(6);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_15_desc;
+	}
+
+	public void setGallery1_15_desc(String gallery1_15_desc) {
+		this.gallery1_15_desc = gallery1_15_desc;
+	}
+
+	public String getGallery1_16_desc() {
+		
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_16'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_16_desc = rs.getString(6);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_16_desc;
+	}
+
+	public void setGallery1_16_desc(String gallery1_16_desc) {
+		this.gallery1_16_desc = gallery1_16_desc;
+	}
+
+	public String getGallery1_17_desc() {
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_17'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_17_desc = rs.getString(6);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_17_desc;
+	}
+
+	public void setGallery1_17_desc(String gallery1_17_desc) {
+		this.gallery1_17_desc = gallery1_17_desc;
+	}
+
+	public String getGallery1_18_desc() {
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_18'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_18_desc = rs.getString(6);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_18_desc;
+	}
+
+	public void setGallery1_18_desc(String gallery1_18_desc) {
+		this.gallery1_18_desc = gallery1_18_desc;
+	}
+
+	public String getGallery1_19_desc() {
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_19'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_19_desc = rs.getString(6);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_19_desc;
+	}
+
+	public void setGallery1_19_desc(String gallery1_19_desc) {
+		this.gallery1_19_desc = gallery1_19_desc;
+	}
+
+	public String getGallery1_20_desc() {
+String query1 ="select * from agri.agri_gallery_image where image_name = 'gallery1_20'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                gallery1_20_desc = rs.getString(6);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return gallery1_20_desc;
+	}
+
+	public void setGallery1_20_desc(String gallery1_20_desc) {
+		this.gallery1_20_desc = gallery1_20_desc;
+	}
+
 	public String getUser_name() {
 		return user_name;
 	}
@@ -496,9 +1341,9 @@ String query1 ="select * from agri.agri_gallery_image where image_name = 'galler
 		this.gallery1_1 = gallery1_1;
 	}
 
-	public String getMot_ministre() {
+	public String getMot_ministre_1() {
 		
-		String query1 ="select * from agri.agri_text where text_name = 'mot_ministre'";
+		String query1 ="select * from agri.agri_text where text_name = 'mot_ministre_1'";
 		
 		try {
     		Class.forName(driver).newInstance();
@@ -506,7 +1351,7 @@ String query1 ="select * from agri.agri_gallery_image where image_name = 'galler
     		st = con.createStatement();
     		java.sql.ResultSet rs = st.executeQuery(query1);
                 rs.next();
-                mot_ministre = rs.getString(3);
+                mot_ministre_1 = rs.getString(3);
     		
     		rs.close();
             st.close();
@@ -516,11 +1361,11 @@ String query1 ="select * from agri.agri_gallery_image where image_name = 'galler
             System.out.println(ex.getMessage());
         }
 		
-		return mot_ministre;
+		return mot_ministre_1;
 	}
 
-	public void setMot_ministre(String mot_ministre) {
-		this.mot_ministre = mot_ministre;
+	public void setMot_ministre_1(String mot_ministre_1) {
+		this.mot_ministre_1 = mot_ministre_1;
 	}
 
 	public String getPhoto_ministre() {

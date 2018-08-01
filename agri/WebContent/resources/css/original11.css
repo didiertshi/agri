@@ -1,11 +1,85 @@
 @CHARSET "ISO-8859-1";
 
-
+* {box-sizing: border-box}
 body {
     background-color: #ffffff;
    
     margin: 1px;
 }
+.mySlides {display: none}
+.c13{
+	vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+ cursor: pointer;
+ position: absolute;
+ top: 50%;
+ width: auto;
+ padding: 16px;
+ margin-top: -22px;
+ color: blue;
+ font-weight: bold;
+ font-size: 25px;
+ transition: 0.6s ease;
+ border-radius: 0 3px 3px 0;
+ border-radius: 3px 0 0 3px;
+ 
+}
+
+.next{
+ right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  color: #dd3636;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #dd3636;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
 
 .header {
     background-color: #80ff80;
@@ -61,6 +135,23 @@ body {
 .c4{
 	font-size: 30px;
 	color: #0000ff;
+}
+
+.c5{
+	position: relative;
+	display: inline-block;
+	padding: 5px 5px;
+	text-align: center;
+	font-size: 25px;
+	color: #ffffff;
+	background-color: #ffff80
+	
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 ul {
@@ -127,18 +218,14 @@ p a:hover {
 }
 
 .column.side {
-    width: 25%;
-    border-style: solid;
-    border-color: #ffffff;
-    border-width: 10px
+    width: 20%;
+    
     
 }
 
 .column.middle {
     width: 50%;
-    border-style: solid;
-    border-color: #ffffff;
-    border-width: 10px
+   
 }
 
 .column.ri {
@@ -164,7 +251,10 @@ p a:hover {
     
 }
 
-
+.newsbox{
+	height: 500px;
+	overflow: scroll;
+}
 
 
 @media screen and (max-width:1200px) {
@@ -299,7 +389,7 @@ li div {
 	color: #0000ff;
 }
 li div {
-    display: inline-block;
+    display: block;
     padding: 10px 10px;
     color: #8000ff;
     text-align: center;
@@ -308,7 +398,11 @@ li div {
     background-color: #ffffff
 }
 
-
+.dropdown{
+	
+    display: block;
+	
+}
 
     .c11{
 	width:25px;
@@ -324,12 +418,34 @@ li div {
 	margin-right:10px;
 	border-radius: 30%;
 }
-.dropdown{
-	position: relative;
-    display: block;
-	background-color: #ffffff
-}
-
+.prev, .next,.text {font-size: 11px}
 
 }
 
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:50px; top:0px;}
+    50%  {background-color:blue; left:50px; top:0px;}
+    75%  {background-color:green; left:0px; top:0px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:50px; top:0px;}
+    50%  {background-color:blue; left:50px; top:0px;}
+    75%  {background-color:green; left:0px; top:0px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
