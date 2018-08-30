@@ -45,6 +45,34 @@ import javax.mail.internet.MimeMultipart;
 
 public class bean {
 	
+	private String nom_ministre;
+	
+	public String getNom_ministre() {
+		
+String query1 ="select * from agri.agri_text where text_name = 'nom_ministre'";
+		
+		try {
+    		Class.forName(driver).newInstance();
+    		con = DriverManager.getConnection(url,userName,password);
+    		st = con.createStatement();
+    		java.sql.ResultSet rs = st.executeQuery(query1);
+                rs.next();
+                nom_ministre = rs.getString(3);
+    		
+    		rs.close();
+            st.close();
+            con.close();
+    	}
+    	catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+		return nom_ministre;
+	}
+
+	public void setNom_ministre(String nom_ministre) {
+		this.nom_ministre = nom_ministre;
+	}
+
 	private String photo_ministre;
 	private String mot_ministre_1;
 	private String mot_ministre_2;
@@ -1664,7 +1692,7 @@ String query1 ="select * from agri.agri_gallery_image where image_name = 'galler
 
 	public String getPhoto_ministre() {
 		
-		String query1 ="select * from agri.agri_pic where picture_name = 'photo_ministre'";
+		String query1 ="select * from agri.agri_gallery_image where image_name = 'photo_ministre'";
 		try {
     		Class.forName(driver).newInstance();
     		con = DriverManager.getConnection(url,userName,password);
