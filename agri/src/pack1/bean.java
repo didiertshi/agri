@@ -1699,7 +1699,7 @@ String query1 ="select * from agri.agri_gallery_image where image_name = 'galler
     		st = con.createStatement();
     		java.sql.ResultSet rs = st.executeQuery(query1);
                 rs.next();
-                photo_ministre ="/../agri_images/images/"+ rs.getString(3);
+                photo_ministre ="/../../agri_images/"+ rs.getString(5);
     		
     		rs.close();
             st.close();
